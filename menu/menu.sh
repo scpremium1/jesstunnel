@@ -280,14 +280,14 @@ clear
 echo -e "$(figlet   "")" | lolcat
 clear
 # Define color variables
+# Define color variables
 BIWhite="\033[1;37m"
-BIYellow="\033[1;33m"
-BIRed="\033[1;31m"
+BIBlue="\033[1;34m"  # Changed from BIYellow to BIBlue
 NC="\033[0m" # Reset color
-LIGHTGREEN="\033[1;32m"
+LIGHTGREEN="\033[1;32m"  # You can leave this or change it if you'd like
 
 echo -e "\033[1m${LIGHTGREEN}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\033[1m${LIGHTGREEN}┃${NC}${BIYellow} \e[41;97;1m                ◥꧁BY TUNNEL STORE꧂◤                \033[0m\e[38;5;196m${NC}"
+echo -e "\033[1m${LIGHTGREEN}┃${NC}${BIBlue} \e[41;97;1m               ◥꧁BY TUNNEL STORE꧂◤                \033[0m\e[38;5;196m${NC}"
 echo -e "\033[1m${LIGHTGREEN}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}┃${NC}${LIGHTGREEN} ⇲  ${LIGHTGREEN}VERSI OS  ➤ ${LIGHTGREEN}$(cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME=//g' | sed 's/"//g')     ${NC}"
@@ -307,7 +307,7 @@ echo -e "\033[1m${LIGHTGREEN}┃${NC}${LIGHTGREEN}  ${LIGHTGREEN}  SSH ${NC}: $r
 echo -e "\033[1m${LIGHTGREEN}┃${NC}${LIGHTGREEN}   ${LIGHTGREEN}   STUNNEL ${NC}: $resst" "${LIGHTGREEN} DROPBEAR ${NC}: $resdbr" "${LIGHTGREEN} SSH-WS ${NC}: $ressshws" 
 echo -e "\033[1m${LIGHTGREEN}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\033[1m${LIGHTGREEN}┃${NC} ${BIRed}                 ${LIGHTGREEN}🔹 MENU OPTIONS 🔹${NC}                   ${LIGHTGREEN}┃\033[0m${NC}"
+echo -e "\033[1m${LIGHTGREEN}┃${NC} ${BIRed} ${LIGHTGREEN}                 ${BIBlue}🔹 MENU OPTIONS 🔹${NC}                   ${LIGHTGREEN}┃\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}┃${NC} ${LIGHTGREEN}  [01] ${LIGHTGREEN}SSH     ${LIGHTGREEN}[Menu]      [08] ${LIGHTGREEN}ADD-HOST    ${LIGHTGREEN}[Menu]${NC}  ${LIGHTGREEN}┃\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}┃${NC} ${LIGHTGREEN}  [02] ${LIGHTGREEN}VMESS   ${LIGHTGREEN}[Menu]      [09] ${LIGHTGREEN}RUNNING     ${LIGHTGREEN}[Menu]${NC}  ${LIGHTGREEN}┃\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}┃${NC} ${LIGHTGREEN}  [03] ${LIGHTGREEN}VLESS   ${LIGHTGREEN}[Menu]      [10] ${LIGHTGREEN}INSTALL UDP ${LIGHTGREEN}[Menu]${NC}  ${LIGHTGREEN}┃\033[0m${NC}"
@@ -317,13 +317,13 @@ echo -e "\033[1m${LIGHTGREEN}┃${NC} ${LIGHTGREEN}  [06] ${LIGHTGREEN}TRIAL   $
 echo -e "\033[1m${LIGHTGREEN}┃${NC} ${LIGHTGREEN}  [07] ${LIGHTGREEN}BACKUP  ${LIGHTGREEN}[Menu]      [14] ${LIGHTGREEN}UPDATE      ${LIGHTGREEN}[Menu]${NC}  ${LIGHTGREEN}┃\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\033[1m${LIGHTGREEN}┃${NC}${LIGHTGREEN}↪️ Script Versi   ➤ ${LIGHTGREEN}$(cat /opt/.ver)   ${NC}"
+echo -e "\033[1m${LIGHTGREEN}┃${NC}${BIBlue}↪️ Script Versi   ➤ ${LIGHTGREEN}$(cat /opt/.ver)   ${NC}"
 echo -e "\033[1m${LIGHTGREEN}┃${NC}${LIGHTGREEN}🧒 Nama Clinte    ➤ ${LIGHTGREEN}$Name    ${NC}"
 echo -e "\033[1m${LIGHTGREEN}┃${NC}${LIGHTGREEN}🗓️ Expiry Date    ➤ ${LIGHTGREEN}$exp ${LIGHTGREEN}➤${LIGHTGREEN} $exp2${LIGHTGREEN} Days.   ${NC}"
 echo -e "\033[1m${LIGHTGREEN}┃${NC}${LIGHTGREEN}👤 Whastapp Owner ➤ ${LIGHTGREEN}085888801241     ${NC}"
 echo -e "\033[1m${LIGHTGREEN}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e "\033[1m${LIGHTGREEN}╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮\033[0m${NC}"
-echo -e "\033[1m${LIGHTGREEN}┃${NC} ${BIRed} ${LIGHTGREEN}TERIMAKASIH SUDAH MENGGUNAKAN BY TUNNEL STORE${NC}      ${LIGHTGREEN}┃\033[0m${NC}"          
+echo -e "\033[1m${LIGHTGREEN}┃${NC} ${BIRed}   ${LIGHTGREEN}TERIMAKASIH SUDAH MENGGUNAKAN BY TUNNEL STORE${NC}      ${LIGHTGREEN}┃\033[0m${NC}"          
 echo -e "\033[1m${LIGHTGREEN}╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯\033[0m${NC}"
 echo -e ""
 read -p "               Pilih Nomor └╼>>>  bro: " opt
